@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgb(16, 110, 122), rgb(193, 209, 211));
+    min-height: 100vh;
+}
+
+header {
+    font-family: fantasy;
+    border: solid black;
+    border-radius: 10px;
+    background: lightskyblue;
+    color: rgb(119, 13, 114);
+    padding: 35px;
+    text-align: center;
+    font-size: 2rem;
+    width: 90%;
+    max-width: 800px;
+}
+
+nav {
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgb(255, 58, 229);
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 90%;
+    max-width: 800px;
+}
+
+nav a {
+    letter-spacing: 3px;
+    font-family: fantasy;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: rgb(219, 31, 110);
+    color: cornsilk;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.container {
+    font-family: fantasy;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    margin: 7px;
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.imagen {
+    height: 19vh;
+    width: 19vh;
+    max-width: 100%;
+}
+
+footer {
+    background-color: black;
+    border-radius: 10px;
+    height: 14vh;
+    width: 90%;
+    max-width: 800px;
+}
+
+.texto {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 9px;
+}
+
+@media (max-width: 600px) {
+    header, nav, .container, footer {
+        width: 95%;
+    }
+    .texto {
+        font-size: 1.2rem;
+    }
+    nav a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
